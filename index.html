@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>3D Studio</title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+</head>
+
+<body>
+
+  <header class="topbar">
+
+    <div class="logo">
+      3D Studio
+    </div>
+
+    <div class="menu">
+      <button>File</button>
+      <button>Edit</button>
+      <button>View</button>
+      <button>Object</button>
+    </div>
+
+    <div class="actions">
+      <button id="saveButton">
+        Save
+      </button>
+
+      <button id="exportButton">
+        Export
+      </button>
+    </div>
+
+  </header>
+
+
+  <main class="editor">
+
+    <aside class="sidebar left">
+
+      <h3>Scene</h3>
+
+      <div id="objectList">
+
+        <div class="object-item">
+          Camera
+        </div>
+
+        <div class="object-item">
+          Light
+        </div>
+
+        <div class="object-item">
+          Cube
+        </div>
+
+      </div>
+
+    </aside>
+
+
+    <section
+      id="viewport"
+      class="viewport"
+    >
+    </section>
+
+
+    <aside class="sidebar right">
+
+      <h3>Properties</h3>
+
+      <div class="property">
+        <label>Position X</label>
+        <input id="posX" type="number" value="0">
+      </div>
+
+      <div class="property">
+        <label>Position Y</label>
+        <input id="posY" type="number" value="0">
+      </div>
+
+      <div class="property">
+        <label>Position Z</label>
+        <input id="posZ" type="number" value="0">
+      </div>
+
+    </aside>
+
+  </main>
+
+
+  <script
+    type="module"
+    src="app.js"
+  ></script>
+
+</body>
+
+</html>
